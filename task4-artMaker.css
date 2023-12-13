@@ -1,0 +1,84 @@
+* {
+    user-select: none;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1,
+.Design {
+    border-bottom: 2px solid black;
+    width: fit-content;
+    margin-inline: auto;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="number"],
+input[type="color"],
+button {
+    font-size: 16px;
+    font-weight: 900;
+    border: 3px dashed black;
+    /* height: 5px; */
+    /* padding: 10px 5px; */
+    text-align: center;
+    width: 100px;
+    margin-inline: 10px;
+}
+
+button {
+    border: 3px solid black;
+    background: white;
+    padding: 5px 10px;
+    margin-block: 40px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+input[type="color"] {
+    width: 50px;
+    height: 30px;
+}
+
+button:hover {
+    border: 3px solid white;
+    background: black;
+    color: white;
+}
+
+table,
+tbody,
+tr {
+    text-align: center;
+    margin: auto;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+    border: 3px dashed black;
+    margin: 5px;
+    display: inline-block;
+}
+
+svg {
+    width: 20px;
+    border-radius: 100%;
+    padding: 3px;
+    margin-top: 2px;
+    transition: all 0.5s;
+}
+
+svg:hover {
+    background: #000;
+    color: white;
+    border-radius: 100%;
+}

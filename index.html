@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Maker</title>
+    <link rel="stylesheet" href="task4-artMaker.css">
+</head>
+
+<body>
+    <section>
+        <h1>Pixel Art Maker</h1>
+
+        <div>
+            <h2>Choose Grid Size</h2>
+            <div style="display: flex; gap: 30px; align-items: start;">
+                <div style="display: inline-block;">
+                    <label for="height">Grid Height</label>
+
+                    <div>
+                        <input disabled type="number" min="0" name="height" id="height">
+
+                    </div>
+                    <svg id="heightUP" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+                    </svg>
+                    <svg id="heightDOWN" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+
+
+                </div>
+
+
+
+                <div style="display: inline-block;">
+                    <label for="width">Grid Width</label>
+                    <div>
+
+                        <input disabled type="number" min="0" name="width" id="width">
+
+                    </div>
+                    <svg id="widthUP" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+                    </svg>
+                    <svg id="widthDOWN" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </div>
+
+
+                <div style="display: inline-block;">
+                    <label for="color">Pick a color</label>
+                    <div>
+
+                        <input type="color" id="color" value="#ff0000">
+
+                    </div>
+
+                    <div hidden>
+                        <svg id="" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+                        </svg>
+                        <svg id="" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <button type="button" id="submit">Submit</button>
+
+        </div>
+        <h3 hidden id="invalideMsg" style="color:red; font-size:32px;">Enter Grid Size 😒</h3>
+        <div id="gridDiv" hidden>
+            <h2 class="Design">Design Canvas</h2>
+            <table>
+                <tbody id="gridArea">
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script src="task4-artMaker.js"></script>
+</body>
+
+</html>
